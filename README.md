@@ -27,4 +27,4 @@ Objects  | Messages --> Response
 Person  | 
 Bike  | working?  --> true/false
 DockingStation | bike --> a Bike
-     | dock(bike)
+    | dock(bike)
