@@ -10,7 +10,11 @@ describe DockingStation do
 		expect{(subject.dock(Bike.new))}.to raise_error 'No Space Available'
 	end
 
-	
+	it 'can be made with larger capacity' do
+		station = DockingStation.new(25)
+		25.times { station.dock(Bike.new)}
+		expect{(station.dock(Bike.new))}.to raise_error 'No Space Available'
+	end	
 
 	describe '#dock(bike)' do 
 		it 'can dock bikes' do 
