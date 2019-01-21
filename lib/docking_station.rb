@@ -10,8 +10,10 @@ class DockingStation
 	attr_reader :bikes 
 
 	def release_bike
-		fail 'No Bikes Available' if 	empty?
-		@bikes.pop
+		available_bike = @bikes.detect {|bike| bike.working?}
+		fail 'No Bikes Available' if empty?
+		fail 'No Working Bikes Available' unless available_bike
+		return available_bike
 	end
 
 	def dock(bike)

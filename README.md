@@ -39,6 +39,31 @@ As a system maintainer,
 So that I can plan the distribution of bikes,
 I want a docking station to have a default capacity of 20 bikes.
 ```
+```
+As a system maintainer,
+So that busy areas can be served more effectively,
+I want to be able to specify a larger capacity when necessary.
+```
+```
+As a system maintainer,
+So that busy areas can be served more effectively,
+I want to be able to specify a larger capacity when necessary.
+```
+```
+As a member of the public,
+So that I reduce the chance of getting a broken bike in future,
+I'd like to report a bike as broken when I return it.
+```
+```
+As a maintainer of the system,
+So that I can manage broken bikes and not disappoint users,
+I'd like docking stations not to release broken bikes.
+```
+```
+As a maintainer of the system,
+So that I can manage broken bikes and not disappoint users,
+I'd like docking stations to accept returning bikes (broken or not).
+```
 
 
 Domain Model:
@@ -47,6 +72,6 @@ Domain Model:
 Objects:  | Person | Bike | DockingStation
 ------------- | ------------- | -------------- | -------------- |
 Message->Response: |    | working?->true/false | bike->a Bike
-Message->Response: |   |   | dock(bike)
-Message->Response: |   |   | release_bike->a Bike
+Message->Response: |   | broken?/working?  | dock(bike)
+Message->Response: |   | report_broken->self  | release_bike->a Bike
 
