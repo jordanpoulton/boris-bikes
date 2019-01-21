@@ -1,6 +1,6 @@
 # Boris Bikes Week
 
-## An attempt to learn basic TDD in Ruby using RSPec by way of creating a system to manage the Boris Bikes network
+### An attempt to learn basic TDD in Ruby using RSPec by way of creating a system to manage the Boris Bikes network
 
 Stories:
 ===
@@ -24,6 +24,9 @@ As a member of the public
 So I can decide whether to use the docking station
 I want to see a bike that has been docked
 ```
+
+Domain Model:
+===
 
 Objects:  | Person | Bike | DockingStation
 ------------- | ------------- | -------------- | -------------- |
