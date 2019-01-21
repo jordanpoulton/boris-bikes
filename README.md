@@ -22,7 +22,7 @@ So I can decide whether to use the docking station
 I want to see a bike that has been docked
 
 
-Objects  | Person | Bike | DockingStation
+Objects:  | Person | Bike | DockingStation
 ------------- | ------------- | -------------- | -------------- |
-Message->Response |    | working?->true/false | bike->a Bike
-Message->Response |   |   | dock(bike)
+Message->Response: |    | working?->true/false | bike->a Bike
+Message->Response: |   |   | dock(bike)
